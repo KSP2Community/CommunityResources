@@ -1,0 +1,104 @@
+// KSP.Sim.ResourceSystem.ResourceFlowMode
+//		0 : ALL_VESSEL
+//		1 : NO_FLOW
+//		2 : NULL
+//		3 : STACK_PRIORITY_SEARCH
+//		4 : STAGE_PRIORITY_FLOW
+//		5 : STAGE_STACK_FLOW_BALANCE
+
+// "Resource/Abbreviation/x"
+// 		"MonoPropellant"	: MP
+// 		"SolidFuel"			: SF
+// 		"Intake Air"		: Air
+// 		"TestRocks"			: TR
+// 		"EVAPropellant"		: EP
+// 		"Hydrogen"			: H
+// 		"Methane"			: LF
+// 		"Oxidizer"			: OX
+// 		"Methalox"			: MO
+// 		"MethaneAir"		: MA
+// 		"Uranium"			: Uranium
+// 		"ElectricCharge"	: EC
+// 		"Xenon"				: XE
+// 		"XenonEC"			: XE
+// 		"Ablator"			: AB
+
+//  vfxFuelType
+//		"Pressurized"
+//		"SolidFuel"
+//		null
+// 		"Methalox"
+// 		"NoFuel"
+
+//KSP.Sim.ResourceSystem.ResourceTransferMode
+//		0 : NONE
+//		1 : PUMP
+
+
+@new("Oxygen")
+:resources {
+	displayNameKey: "Resource/DisplayName/Oxygen";
+	abbreviationKey: "Resource/Abbreviation/O2";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 1;
+	specificHeatCapacityPerUnit: 1000;
+	FlowMode: 4;
+	transferMode: 1;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "Pressurized";
+}
+
+@new("Water")
+:resources {
+	displayNameKey: "Resource/DisplayName/Water";
+	abbreviationKey: "Resource/Abbreviation/H20";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 1;
+	specificHeatCapacityPerUnit: 1000;
+	FlowMode: 4;
+	transferMode: 1;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
+
+@new("Food")
+:resources {
+	displayNameKey: "Resource/DisplayName/Food";
+	abbreviationKey: "Resource/Abbreviation/FD";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 5;
+	specificHeatCapacityPerUnit: 10;
+	FlowMode: 4;
+	transferMode: 1;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
+
+@new("Waste")
+:resources {
+	displayNameKey: "Resource/DisplayName/Waste";
+	abbreviationKey: "Resource/Abbreviation/WST";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 1;
+	specificHeatCapacityPerUnit: 10;
+	FlowMode: 4;
+	transferMode: 1;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "Pressurized";
+}
