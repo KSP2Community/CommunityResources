@@ -1,29 +1,29 @@
 @use 'flowmodes';
 @use 'transfermodes';
 
-// "Resource/Abbreviation/x"
-// 		"MonoPropellant"	: MP
-// 		"SolidFuel"			: SF
-// 		"Intake Air"		: Air
-// 		"TestRocks"			: TR
-// 		"EVAPropellant"		: EP
-// 		"Hydrogen"			: H
-// 		"Methane"			: LF
-// 		"Oxidizer"			: OX
-// 		"Methalox"			: MO
-// 		"MethaneAir"		: MA
-// 		"Uranium"			: Uranium
-// 		"ElectricCharge"	: EC
-// 		"Xenon"				: XE
-// 		"XenonEC"			: XE
-// 		"Ablator"			: AB
+// Stock "Resource/Abbreviation/x"
+//	"MonoPropellant": MP
+//	"SolidFuel"	: SF
+//	"Intake Air"	: Air
+//	"TestRocks"	: TR
+//	"EVAPropellant"	: EP
+//	"Hydrogen"	: H
+//	"Methane"	: LF
+//	"Oxidizer"	: OX
+//	"Methalox"	: MO
+//	"MethaneAir"	: MA
+//	"Uranium"	: Uranium
+//	"ElectricCharge": EC
+//	"Xenon"		: XE
+//	"XenonEC"	: XE
+//	"Ablator"	: AB
 
 //  vfxFuelType
-//		"Pressurized"
-//		"SolidFuel"
-//		null
-// 		"Methalox"
-// 		"NoFuel"
+//	"Pressurized"
+//	"SolidFuel"
+//	null
+//	"Methalox"
+//	"NoFuel"
 
 @new("Oxygen")
 :resources {
