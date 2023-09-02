@@ -9,7 +9,7 @@ Resource/Abbreviation/CO2,Text,,CO2
 Resource/DisplayName/Water,Text,,Water
 Resource/Abbreviation/H2O,Text,,H2O
 
-Resource/DisplayName/WasteWater,Text,,WasteWater
+Resource/DisplayName/WasteWater,Text,,Waste Water
 Resource/Abbreviation/WaH2O,Text,,WaH2O
 
 Resource/DisplayName/Food,Text,,Food
