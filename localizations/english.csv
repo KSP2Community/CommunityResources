@@ -1,0 +1,17 @@
+Key,Type,Desc,English
+
+Resource/DisplayName/Oxygen,Text,,Oxygen
+Resource/Abbreviation/O2,Text,,O2
+
+Resource/DisplayName/Water,Text,,Water
+Resource/Abbreviation/H2O,Text,,H2O
+
+Resource/DisplayName/Food,Text,,Food
+Resource/Abbreviation/FD,Text,,FD
+
+Resource/DisplayName/Waste,Text,,Waste
+Resource/Abbreviation/WST,Text,,WST
+
+VAB/Tooltip/Food,Text,,Food
+VAB/Tooltip/Water,Text,,Water
+VAB/Tooltip/Oxygen,Text,,Oxygen
