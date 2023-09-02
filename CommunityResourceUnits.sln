@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{70C57300-2431-4824-B9F3-4522377BD657}") = "CommunityResources", "src/CommunityResourceUnits/CommunityResourceUnits.csproj", "{2A62527B-B543-4E5A-A197-D28C37F282D8}"
+Project("{70C57300-2431-4824-B9F3-4522377BD657}") = "CommunityResources", "src\CommunityResources\CommunityResources.csproj", "{2A62527B-B543-4E5A-A197-D28C37F282D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

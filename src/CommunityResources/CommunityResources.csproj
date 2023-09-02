@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <!-- Project references -->
+    <PropertyGroup>
+      <RootNamespace>CommunityResourceUnits</RootNamespace>
+    </PropertyGroup>
     <ItemGroup Label="DLL file references">
         <!-- Add references to any DLL files you want to use in your mod here -->
     </ItemGroup>
