@@ -18,10 +18,8 @@ internal static class Patches
     {
         if (ResourceUnits.TryGetValue(resourceName, out __result))
         {
-            CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> {__result}");
             return false;
         }
-        CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> unchanged");
         return true;
     }
 
@@ -31,10 +29,8 @@ internal static class Patches
     {
         if (ResourceUnits.TryGetValue(resourceName, out __result))
         {
-            CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> {__result}");
             return false;
         }
-        CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> unchanged");
         return true;
     }
 
