@@ -13,6 +13,13 @@
   },
   "dependencies": [
     {
+      "id": "com.github.x606.spacewarp",
+      "version": {
+        "min": "1.4.0",
+        "max": "*"
+      }
+    },
+    {
         "id": "PatchManager",
         "version": {
             "min": "0.1.0",
