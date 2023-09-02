@@ -1,5 +1,25 @@
 Key,Type,Desc,French
 
+Resource/DisplayName/Oxygen,Text,,Oxygène
+Resource/Abbreviation/O2,Text,,O2
+
+Resource/DisplayName/CarbonDioxide,Text,,Dioxyde de Carbone
+Resource/Abbreviation/CO2,Text,,CO2
+
+Resource/DisplayName/Water,Text,,Eau
+Resource/Abbreviation/H2O,Text,,H2O
+
+Resource/DisplayName/WasteWater,Text,,Eau Usée
+Resource/Abbreviation/WaH2O,Text,,WaH2O
+
+Resource/DisplayName/Food,Text,,Nourriture
+Resource/Abbreviation/FD,Text,,NT
+
+Resource/DisplayName/Waste,Text,,Déchets
+Resource/Abbreviation/WST,Text,,DE
+
 VAB/Tooltip/Food,Text,,Nourriture
 VAB/Tooltip/Water,Text,,Eau
 VAB/Tooltip/Oxygen,Text,,Oxygène
+VAB/Tooltip/CarbonDioxide,Text,,Dioxyde de Carbone
+VAB/Tooltip/WasteWater,Text,,Eau Usée
