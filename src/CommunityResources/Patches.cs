@@ -1,6 +1,10 @@
 ﻿using HarmonyLib;
 using KSP.Game;
+using KSP.Modules;
+using KSP.Sim.Definitions;
+using KSP.Sim.ResourceSystem;
 using KSP.UI;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CommunityResourceUnits;
 
@@ -14,9 +18,10 @@ internal static class Patches
     {
         if (ResourceUnits.TryGetValue(resourceName, out __result))
         {
+            CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> {__result}");
             return false;
         }
-
+        CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> unchanged");
         return true;
     }
 
@@ -26,9 +31,37 @@ internal static class Patches
     {
         if (ResourceUnits.TryGetValue(resourceName, out __result))
         {
+            CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> {__result}");
             return false;
         }
-
+        CommunityResourceUnitsPlugin.Instance.SWLogger.LogInfo($"{resourceName} -> unchanged");
         return true;
+    }
+
+    [HarmonyPostfix,
+     HarmonyPatch(typeof(Module_ResourceCapacities), nameof(Module_ResourceCapacities.OnInitialize))]
+    private static void ResourceCapacities_GetUnits(Module_ResourceCapacities __instance)
+    {
+        var resourceDefinitionDatabase = GameManager.Instance.Game.ResourceDefinitionDatabase;
+        if (__instance.PartBackingMode == PartBehaviourModule.PartBackingModes.OAB)
+        {
+            foreach (var container in __instance.OABPart.Containers)
+            {
+                foreach (var definition in container)
+                {
+                    var data = resourceDefinitionDatabase.GetDefinitionData(definition);
+                    if (data.name != "IntakeAir")
+                    {
+                        if (ResourceUnits.TryGetValue(data.name, out var newUnit) && __instance.dataResourceCapacities.TryGetProperty<float>(data.name, out var property))
+                        {
+                            __instance.dataResourceCapacities.SetToStringDelegate(property,
+                                o => __instance.RoundToSignificantFigures((float)o,
+                                         3) +
+                                     newUnit);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

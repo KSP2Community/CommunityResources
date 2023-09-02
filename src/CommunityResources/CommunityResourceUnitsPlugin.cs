@@ -27,6 +27,7 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
     private void Awake()
     {
         Harmony.CreateAndPatchAll(typeof(Patches));
+        Instance = this;
     }
 
     /// <summary>
@@ -36,7 +37,6 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
     {
         base.OnInitialized();
 
-        Instance = this;
         GameManager.Instance.Assets.LoadByLabel<TextAsset>("resource_units",RegisterUnits,delegate(IList<TextAsset> assetLocations)
         {
             if (assetLocations != null)
