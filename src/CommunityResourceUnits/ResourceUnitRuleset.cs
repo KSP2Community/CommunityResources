@@ -7,7 +7,7 @@ using PatchManager.SassyPatching.Selectables;
 
 namespace CommunityResourceUnits;
 
-[PatcherRuleset("resource_units")]
+[PatcherRuleset("resource_units","resource_units")]
 public class ResourceUnitRuleset : IPatcherRuleSet
 {
     public bool Matches(string label) => label == "resource_units";

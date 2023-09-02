@@ -1,0 +1,94 @@
+@use 'flowmodes';
+@use 'transfermodes';
+
+// Stock "Resource/Abbreviation/x"
+//	"MonoPropellant": MP
+//	"SolidFuel"	: SF
+//	"Intake Air"	: Air
+//	"TestRocks"	: TR
+//	"EVAPropellant"	: EP
+//	"Hydrogen"	: H
+//	"Methane"	: LF
+//	"Oxidizer"	: OX
+//	"Methalox"	: MO
+//	"MethaneAir"	: MA
+//	"Uranium"	: Uranium
+//	"ElectricCharge": EC
+//	"Xenon"		: XE
+//	"XenonEC"	: XE
+//	"Ablator"	: AB
+
+//  vfxFuelType
+//	"Pressurized"
+//	"SolidFuel"
+//	null
+//	"Methalox"
+//	"NoFuel"
+
+@new("Oxygen")
+:resources {
+	displayNameKey: "Resource/DisplayName/Oxygen";
+	abbreviationKey: "Resource/Abbreviation/O2";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 4;
+	specificHeatCapacityPerUnit: 920;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "Pressurized";
+}
+
+@new("Water")
+:resources {
+	displayNameKey: "Resource/DisplayName/Water";
+	abbreviationKey: "Resource/Abbreviation/H2O";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 0.001;
+	volumePerUnit: 1;
+	specificHeatCapacityPerUnit: 4.184;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
+
+@new("Food")
+:resources {
+	displayNameKey: "Resource/DisplayName/Food";
+	abbreviationKey: "Resource/Abbreviation/FD";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 5;
+	specificHeatCapacityPerUnit: 1000;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
+
+@new("Waste")
+:resources {
+	displayNameKey: "Resource/DisplayName/Waste";
+	abbreviationKey: "Resource/Abbreviation/WST";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 3;
+	specificHeatCapacityPerUnit: 800;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
