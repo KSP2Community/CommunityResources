@@ -1,7 +1,9 @@
 ﻿using BepInEx;
+using HarmonyLib;
 using JetBrains.Annotations;
 using KSP.Game;
 using Newtonsoft.Json.Linq;
+using PatchManager;
 using SpaceWarp;
 using SpaceWarp.API.Mods;
 using UnityEngine;
@@ -11,6 +13,7 @@ namespace CommunityResourceUnits;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 [BepInDependency(SpaceWarpPlugin.ModGuid, SpaceWarpPlugin.ModVer)]
+[BepInDependency(PatchManagerPlugin.ModGuid, PatchManagerPlugin.ModVer)]
 public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
 {
     // These are useful in case some other mod wants to add a dependency to this one
@@ -20,6 +23,11 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
 
     // Singleton instance of the plugin class
     public static CommunityResourceUnitsPlugin Instance { get; set; }
+
+    private void Awake()
+    {
+        Harmony.CreateAndPatchAll(typeof(Patches));
+    }
 
     /// <summary>
     /// Runs when the mod is first initialized.
