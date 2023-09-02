@@ -81,3 +81,5 @@ FodyWeavers.xsd
 Thumbs.db
 Desktop.ini
 .DS_Store
+.idea/
+external_dlls/PUT_EXTERNAL_DLLS_HERE
