@@ -3,7 +3,7 @@ Key,Type,Desc,English
 Resource/DisplayName/Oxygen,Text,,Oxygen
 Resource/Abbreviation/O2,Text,,O2
 
-Resource/DisplayName/CarbonDioxyde,Text,,Carbon Dioxyde
+Resource/DisplayName/CarbonDioxide,Text,,Carbon Dioxide
 Resource/Abbreviation/CO2,Text,,CO2
 
 Resource/DisplayName/Water,Text,,Water
@@ -21,5 +21,5 @@ Resource/Abbreviation/WST,Text,,WST
 VAB/Tooltip/Food,Text,,Food
 VAB/Tooltip/Water,Text,,Water
 VAB/Tooltip/Oxygen,Text,,Oxygen
-VAB/Tooltip/CarbonDioxyde,Text,,Carbon Dioxyde
+VAB/Tooltip/CarbonDioxide,Text,,Carbon Dioxide
 VAB/Tooltip/WasteWater,Text,,Waste Water
