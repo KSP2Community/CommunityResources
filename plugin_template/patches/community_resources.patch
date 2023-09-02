@@ -42,9 +42,9 @@
 	vfxFuelType: "Pressurized";
 }
 
-@new("CarbonDioxyde")
+@new("CarbonDioxide")
 :resources {
-	displayNameKey: "Resource/DisplayName/CarbonDioxyde";
+	displayNameKey: "Resource/DisplayName/CarbonDioxide";
 	abbreviationKey: "Resource/Abbreviation/CO2";
 	isTweakable: true;
 	isVisible: true;
