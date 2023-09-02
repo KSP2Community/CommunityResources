@@ -42,10 +42,44 @@
 	vfxFuelType: "Pressurized";
 }
 
+@new("CarbonDioxyde")
+:resources {
+	displayNameKey: "Resource/DisplayName/CarbonDioxyde";
+	abbreviationKey: "Resource/Abbreviation/CO2";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 1;
+	volumePerUnit: 4;
+	specificHeatCapacityPerUnit: 850;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "Pressurized";
+}
+
 @new("Water")
 :resources {
 	displayNameKey: "Resource/DisplayName/Water";
 	abbreviationKey: "Resource/Abbreviation/H2O";
+	isTweakable: true;
+	isVisible: true;
+	massPerUnit: 0.001;
+	volumePerUnit: 1;
+	specificHeatCapacityPerUnit: 4.184;
+	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	transferMode: $TM_PUMP;
+	costPerUnit: 0.8;
+	NonStageable: false;
+	resourceIconAssetAddress: "";
+	vfxFuelType: "NoFuel";
+}
+
+@new("WasteWater")
+:resources {
+	displayNameKey: "Resource/DisplayName/WasteWater";
+	abbreviationKey: "Resource/Abbreviation/WaH2O";
 	isTweakable: true;
 	isVisible: true;
 	massPerUnit: 0.001;
