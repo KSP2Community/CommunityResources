@@ -16,7 +16,7 @@
         <SolutionDir Condition="'$(SolutionDir)'==''">$(MSBuildThisFileDirectory)</SolutionDir>
         <BaseOutputPath>$(SolutionDir)build/bin/$(MSBuildProjectName)</BaseOutputPath>
         <BaseIntermediateOutputPath>$(SolutionDir)build/obj/$(MSBuildProjectName)</BaseIntermediateOutputPath>
-        <AssemblyName>CommunityResources</AssemblyName>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <Configurations>Debug;Release;Deploy;DeployAndRun</Configurations>
         <Platforms>AnyCPU</Platforms>
