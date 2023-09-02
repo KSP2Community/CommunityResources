@@ -1,4 +1,5 @@
 @new()
 :resource_units {
     Water: "l";
+    WasteWater: "l";
 }

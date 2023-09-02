@@ -3,8 +3,14 @@ Key,Type,Desc,English
 Resource/DisplayName/Oxygen,Text,,Oxygen
 Resource/Abbreviation/O2,Text,,O2
 
+Resource/DisplayName/CarbonDioxide,Text,,Carbon Dioxide
+Resource/Abbreviation/CO2,Text,,CO2
+
 Resource/DisplayName/Water,Text,,Water
 Resource/Abbreviation/H2O,Text,,H2O
+
+Resource/DisplayName/WasteWater,Text,,Waste Water
+Resource/Abbreviation/WaH2O,Text,,WaH2O
 
 Resource/DisplayName/Food,Text,,Food
 Resource/Abbreviation/FD,Text,,FD
@@ -15,3 +21,5 @@ Resource/Abbreviation/WST,Text,,WST
 VAB/Tooltip/Food,Text,,Food
 VAB/Tooltip/Water,Text,,Water
 VAB/Tooltip/Oxygen,Text,,Oxygen
+VAB/Tooltip/CarbonDioxide,Text,,Carbon Dioxide
+VAB/Tooltip/WasteWater,Text,,Waste Water
