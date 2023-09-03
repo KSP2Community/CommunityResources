@@ -1,0 +1,15 @@
+
+
+
+// 6 units of hydrogen to 1 unit of oxidizer, normalized
+@new("Hydrolox", true)
+:resources {
+    displayNameKey: "Resources/DisplayName/Hydrolox";
+    abbreviationKey: "Resource/Abbreviation/HO";
+    +Hydrogen {
+        unitsPerRecipeUnit: 0.986394;
+    }
+    +Oxidizer {
+        unitsPerRecipeUnit: 0.164399;
+    }
+}
