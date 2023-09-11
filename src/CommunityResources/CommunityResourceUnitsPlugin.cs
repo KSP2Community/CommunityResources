@@ -37,13 +37,16 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
     {
         base.OnInitialized();
 
-        GameManager.Instance.Assets.LoadByLabel<TextAsset>("resource_units",RegisterUnits,delegate(IList<TextAsset> assetLocations)
+        GameManager.Instance.Assets.LoadByLabel<TextAsset>("resource_units", RegisterUnits, delegate (IList<TextAsset> assetLocations)
         {
             if (assetLocations != null)
             {
                 Addressables.Release(assetLocations);
             }
         });
+
+        // Non-Stageable Resources flight HUD window resizing
+        gameObject.AddComponent<NonStageableResourcesUIController>();
     }
 
     private static void RegisterUnits(TextAsset asset)
