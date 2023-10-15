@@ -1,4 +1,5 @@
 ﻿using KSP.Game;
+using KSP.Messages;
 using KSP.Sim.impl;
 using KSP.Sim.ResourceSystem;
 using UnityEngine;
@@ -12,7 +13,19 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
 {
     private VesselComponent _activeVessel;
     private GameObject _nsResourcesUI;
-    private int _lastNSResourcesCount = 0;
+    private bool _needNsUiUpdate = false;
+
+    private void Start()
+    {
+        Game.Messages.Subscribe<VesselChangedMessage>(OnVesselChanged);
+    }
+
+    private void OnDestroy()
+    {
+        if (IsGameShuttingDown)
+            return;
+        Game.Messages.Unsubscribe<VesselChangedMessage>(OnVesselChanged);
+    }
 
     private void Update()
     {
@@ -22,31 +35,48 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
         if (_activeVessel is null)
             return;
 
+        if (_needNsUiUpdate)
+        {
+            _needNsUiUpdate = false;
+
+            // Update Non Stageable Resources UI size
+            UpdateNonStageableResourcesUI();
+        }
+    }
+
+    private void OnVesselChanged(MessageCenterMessage msg)
+    {
+        if (msg is not VesselChangedMessage vesselChangedMessage || vesselChangedMessage == null)
+            return;
+
+        _needNsUiUpdate = true;
+    }
+
+    /// <summary>
+    /// Updates the height & position of the non-stageable resources UI
+    /// </summary>
+    /// <param name="nsResourcesCount"></param>
+    private void UpdateNonStageableResourcesUI()
+    {
         // Get number of non-stageable resources in the active vessel
         int nsResourcesCount = GetNonStageableResourcesCount(_activeVessel);
 
-        // Update UI only if resource count has changed
-        if (nsResourcesCount != _lastNSResourcesCount)
+        // Find the non-stageable resources window game object
+        _nsResourcesUI = GameObject.Find("GameManager/Default Game Instance(Clone)/UI Manager(Clone)/Scaled Main Canvas/FlightHudRoot(Clone)/NonStageableResources(Clone)/KSP2UIWindow/Root/UIPanel");
+
+        if (_nsResourcesUI != null)
         {
-            // Find the non-stageable resources window game object
-            _nsResourcesUI = GameObject.Find("GameManager/Default Game Instance(Clone)/UI Manager(Clone)/Scaled Main Canvas/FlightHudRoot(Clone)/NonStageableResources(Clone)/KSP2UIWindow/Root/UIPanel");
+            // Number of resources above the default maximum of 2 (EC & Monoprop)
+            int extraResources = Math.Max(0, nsResourcesCount - 2);
 
-            if (_nsResourcesUI != null)
-            {
-                // Number of resources above the default maximum of 2 (EC & Monoprop)
-                int extraResources = Math.Max(0, nsResourcesCount - 2);
+            // Get the UI object's RectTransform
+            RectTransform rect = _nsResourcesUI.GetComponent<RectTransform>();
 
-                // Get the UI object's RectTransform
-                RectTransform rect = _nsResourcesUI.GetComponent<RectTransform>();
+            // Increase the UI object's vertical size
+            rect.sizeDelta = new Vector2(0, 30 * extraResources);
 
-                // Increase the UI object's vertical size
-                rect.sizeDelta = new Vector2(0, 30 * extraResources);
-
-                // Shift the UI object down
-                rect.localPosition = extraResources * 15 * Vector3.down;
-
-                _lastNSResourcesCount = nsResourcesCount;
-            }
+            // Shift the UI object down
+            rect.localPosition = extraResources * 15 * Vector3.down;
         }
     }
 
