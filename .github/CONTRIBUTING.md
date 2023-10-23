@@ -38,7 +38,7 @@ If you would like to contribute code to CommunityResources, please follow these 
 
 Please observe some basic style rules for your contributions:
 - Follow the naming guidelines put out by [Microsoft](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
-- Per indentation level, use a tab, not spaces
+- Per indentation level, use 4 spaces and no tabs
 - Use Carriage-Return & Line Feed (CRLF) line endings in all C# and Visual Studio source code files. Source files or config files for tools that do not work on Windows and/or can't handle CRLF line endings are exempt.
 - Avoid trailing whitespace
 - Please document your code briefly with inline-comments. If you add new functions, provide summaries that explain parameters, return values and side effects.
