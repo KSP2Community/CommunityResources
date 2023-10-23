@@ -17,7 +17,7 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
 
     private void Start()
     {
-        Game.Messages.Subscribe<VesselChangedMessage>(OnVesselChanged);
+        Game.Messages.PersistentSubscribe<VesselChangedMessage>(OnVesselChanged);
     }
 
     private void OnDestroy()
@@ -60,6 +60,8 @@ internal class NonStageableResourcesUIController : KerbalMonoBehaviour
     {
         // Get number of non-stageable resources in the active vessel
         int nsResourcesCount = GetNonStageableResourcesCount(_activeVessel);
+
+        CommunityResourceUnitsPlugin.Logger.LogInfo($"Updating the Non-Stageable Resource UI. Found {nsResourcesCount} Resources to display.");
 
         // Find the non-stageable resources window game object
         _nsResourcesUI = GameObject.Find("GameManager/Default Game Instance(Clone)/UI Manager(Clone)/Scaled Main Canvas/FlightHudRoot(Clone)/NonStageableResources(Clone)/KSP2UIWindow/Root/UIPanel");
