@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Logging;
 using HarmonyLib;
 using JetBrains.Annotations;
 using KSP.Game;
@@ -23,6 +24,7 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
 
     // Singleton instance of the plugin class
     public static CommunityResourceUnitsPlugin Instance { get; set; }
+    public new static ManualLogSource Logger { get; set; }
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class CommunityResourceUnitsPlugin : BaseSpaceWarpPlugin
     public override void OnInitialized()
     {
         base.OnInitialized();
+        Logger = base.Logger;
 
         GameManager.Instance.Assets.LoadByLabel<TextAsset>("resource_units", RegisterUnits, delegate (IList<TextAsset> assetLocations)
         {
