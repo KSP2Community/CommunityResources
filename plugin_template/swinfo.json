@@ -1,23 +1,23 @@
 {
-  "spec": "1.3",
-  "mod_id": "CommunityResources",
-  "author": "KSP2 Community",
-  "name": "Community Resources",
-  "description": "A mod to add generic resources for mods to use",
-  "source": "https://github.com/KSP2Community/CommunityResources",
-  "version": "0.1.0",
-  "version_check": "https://raw.githubusercontent.com/KSP2Community/CommunityResources/main/swinfo.json",
-  "ksp2_version": {
-    "min": "0.1.3",
-    "max": "*"
-  },
-  "dependencies": [
-    {
-      "id": "com.github.x606.spacewarp",
-      "version": {
-        "min": "1.4.0",
+    "spec": "1.3",
+    "mod_id": "CommunityResources",
+    "author": "KSP2 Community",
+    "name": "Community Resources",
+    "description": "A mod to add generic resources for mods to use",
+    "source": "https://github.com/KSP2Community/CommunityResources",
+    "version": "0.1.0",
+    "version_check": "https://raw.githubusercontent.com/KSP2Community/CommunityResources/main/swinfo.json",
+    "ksp2_version": {
+        "min": "0.1.3",
         "max": "*"
-      }
+    },
+    "dependencies": [
+    {
+        "id": "com.github.x606.spacewarp",
+        "version": {
+            "min": "1.4.0",
+            "max": "*"
+        }
     },
     {
         "id": "PatchManager",
@@ -26,5 +26,5 @@
             "max": "*"
         }
     }
-  ]
+    ]
 }
