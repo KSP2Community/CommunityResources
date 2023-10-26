@@ -4,7 +4,7 @@ using KSP.Modules;
 using KSP.Sim.Definitions;
 using KSP.Sim.ResourceSystem;
 using KSP.UI;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+// using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CommunityResourceUnits;
 
