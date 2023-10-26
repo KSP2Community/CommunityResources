@@ -3,6 +3,7 @@
     <!-- Project references -->
     <PropertyGroup>
       <RootNamespace>CommunityResourceUnits</RootNamespace>
+      <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
     <ItemGroup Label="NuGet package references">
         <!-- Add references to any NuGet packages you want to use in your mod here -->
@@ -11,9 +12,10 @@
         <PackageReference Include="BepInEx.Core" Version="5.*" />
         <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
         <PackageReference Include="HarmonyX" Version="2.10.1" />
-        <PackageReference Include="KerbalSpaceProgram2.GameLibs" Version="0.1.4" PrivateAssets="all" />
+        <PackageReference Include="KerbalSpaceProgram2.GameLibs" Version="0.1.5" PrivateAssets="all" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="PatchManager" Version="0.1.1" />
-        <PackageReference Include="SpaceWarp" Version="1.4.0" />
-        <PackageReference Include="UnityEngine.Modules" Version="2020.3.33.1" />
+        <PackageReference Include="SpaceWarp" Version="1.5.2" />
+        <PackageReference Include="UnityEngine.Modules" Version="2022.3.5" />
     </ItemGroup>
 </Project>
