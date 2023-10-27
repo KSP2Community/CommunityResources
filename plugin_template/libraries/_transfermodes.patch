@@ -1,5 +1,6 @@
-//KSP.Sim.ResourceSystem.ResourceTransferMode
-//		0 : NONE
-//		1 : PUMP
+// KSP.Sim.ResourceSystem.ResourceTransferMode
+// 0 : NONE
+// 1 : PUMP
+
 $TM_NONE: 0;
 $TM_PUMP: 1;
