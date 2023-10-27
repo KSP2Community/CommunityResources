@@ -1,15 +1,36 @@
-
-
-
 // 6 units of hydrogen to 1 unit of oxidizer, normalized
 @new("Hydrolox", true)
 :resources {
-    displayNameKey: "Resources/DisplayName/Hydrolox";
+    displayNameKey: "Resource/DisplayName/Hydrolox";
     abbreviationKey: "Resource/Abbreviation/HO";
     +Hydrogen {
         unitsPerRecipeUnit: 0.986394;
     }
     +Oxidizer {
         unitsPerRecipeUnit: 0.164399;
+    }
+}
+
+@new("ArgonEC", true)
+:resources {
+    displayNameKey: "Resource/DisplayName/Argon";
+    abbreviationKey: "Resource/Abbreviation/Ar";
+    +Argon {
+        unitsPerRecipeUnit: 1;
+    }
+    +ElectricCharge {
+        unitsPerRecipeUnit: 1;
+    }
+}
+
+@new("LithiumEC", true)
+:resources {
+    displayNameKey: "Resource/DisplayName/Lithium";
+    abbreviationKey: "Resource/Abbreviation/Li";
+    +Lithium {
+        unitsPerRecipeUnit: 1;
+    }
+    +ElectricCharge {
+        unitsPerRecipeUnit: 1;
     }
 }
