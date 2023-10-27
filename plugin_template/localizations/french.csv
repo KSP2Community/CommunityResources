@@ -18,8 +18,20 @@ Resource/Abbreviation/FD,Text,,NT
 Resource/DisplayName/Waste,Text,,Déchets
 Resource/Abbreviation/WST,Text,,DE
 
+Resource/DisplayName/Hydrolox,Text,,Hydrolox
+Resource/Abbreviation/HO,Text,,HO
+
+Resource/DisplayName/Argon,Text,,Argon Gas
+Resource/Abbreviation/Ar,Text,,Ar
+
+Resource/DisplayName/Lithium,Text,,Lithium
+Resource/Abbreviation/Li,Text,,Li
+
 VAB/Tooltip/Food,Text,,Nourriture
 VAB/Tooltip/Water,Text,,Eau
 VAB/Tooltip/Oxygen,Text,,Oxygène
 VAB/Tooltip/CarbonDioxide,Text,,Dioxyde de Carbone
 VAB/Tooltip/WasteWater,Text,,Eau Usée
+
+VAB/Tooltip/Argon,Text,,Argon
+VAB/Tooltip/Lithium,Text,,Lithium
