@@ -18,12 +18,12 @@
 // "XenonEC"		: XE
 // "Ablator"		: AB
 
-//  vfxFuelType
-//	"Pressurized"
-//	"SolidFuel"
-//	null
-//	"Methalox"
-//	"NoFuel"
+// vfxFuelType
+// "Pressurized"
+// "SolidFuel"
+// null
+// "Methalox"
+// "NoFuel"
 
 @new("Water")
 :resources {
