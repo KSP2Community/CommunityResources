@@ -8,21 +8,21 @@
     "version": "0.1.0",
     "version_check": "https://raw.githubusercontent.com/KSP2Community/CommunityResources/main/plugin_template/swinfo.json",
     "ksp2_version": {
-        "min": "0.1.4",
+        "min": "0.1.5",
         "max": "*"
     },
     "dependencies": [
     {
         "id": "com.github.x606.spacewarp",
         "version": {
-            "min": "1.4.0",
+            "min": "1.5.0",
             "max": "*"
         }
     },
     {
         "id": "PatchManager",
         "version": {
-            "min": "0.2.0",
+            "min": "0.3.0",
             "max": "*"
         }
     }
