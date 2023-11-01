@@ -1,6 +1,9 @@
 ﻿using HarmonyLib;
+using KSP;
 using KSP.Game;
+using KSP.Iteration.UI.Binding;
 using KSP.Modules;
+using KSP.OAB;
 using KSP.Sim.Definitions;
 using KSP.Sim.ResourceSystem;
 using KSP.UI;
@@ -59,5 +62,24 @@ internal static class Patches
                 }
             }
         }
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(PartInfoOverlay), nameof(PartInfoOverlay.PopulateResourceInfoFromPart))]
+    private static bool PopulateResourceInfoFromPart(List<KeyValuePair<string, string>> dict,
+        IObjectAssemblyResource[] resourceArray)
+    {
+        foreach (var resource in resourceArray)
+        {
+            if (!ResourceUnits.TryGetValue(resource.Name, out var unitName))
+            {
+                unitName = resource.Name == "ElectricCharge" ? Units.SymbolUnits : Units.SymbolTonne;
+            }
+
+            dict.Add(new KeyValuePair<string, string>(PartInfoOverlay.LocalizeVABTooltipString(resource.Name),
+                $"{resource.Count} {PartInfoOverlay.LocalizeVABTooltipString(unitName)}"));
+        }
+
+        return false;
     }
 }
