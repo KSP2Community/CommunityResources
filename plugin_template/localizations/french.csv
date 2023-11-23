@@ -18,6 +18,9 @@ Resource/Abbreviation/FD,Text,,NT
 Resource/DisplayName/Waste,Text,,Déchets
 Resource/Abbreviation/WST,Text,,DE
 
+Resource/DisplayName/Fertilizer,Text,,Engrais
+Resource/Abbreviation/Frt,Text,,Eng
+
 Resource/DisplayName/Hydrolox,Text,,Hydrolox
 Resource/Abbreviation/HO,Text,,HO
 
@@ -32,6 +35,8 @@ VAB/Tooltip/Water,Text,,Eau
 VAB/Tooltip/Oxygen,Text,,Oxygène
 VAB/Tooltip/CarbonDioxide,Text,,Dioxyde de Carbone
 VAB/Tooltip/WasteWater,Text,,Eau Usée
+VAB/Tooltip/Waste,Text,,Déchets
+VAB/Tooltip/Fertilizer,Text,,Engrais
 
 VAB/Tooltip/Argon,Text,,Argon
 VAB/Tooltip/Lithium,Text,,Lithium
