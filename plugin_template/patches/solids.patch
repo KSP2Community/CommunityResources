@@ -34,7 +34,7 @@
 	massPerUnit: 1;
 	volumePerUnit: 5;
 	specificHeatCapacityPerUnit: 1000;
-	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	flowMode: $FM_STACK_PRIORITY_SEARCH;
 	transferMode: $TM_PUMP;
 	costPerUnit: 0.8;
 	NonStageable: true;
@@ -51,7 +51,7 @@
 	massPerUnit: 1;
 	volumePerUnit: 3;
 	specificHeatCapacityPerUnit: 800;
-	flowMode: $FM_STAGE_PRIORITY_FLOW;
+	flowMode: $FM_STACK_PRIORITY_SEARCH;
 	transferMode: $TM_PUMP;
 	costPerUnit: 0.8;
 	NonStageable: false;

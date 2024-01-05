@@ -5,7 +5,7 @@
     "name": "Community Resources",
     "description": "Adds generic resources for mods to use",
     "source": "https://github.com/KSP2Community/CommunityResources",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "version_check": "https://raw.githubusercontent.com/KSP2Community/CommunityResources/main/plugin_template/swinfo.json",
     "ksp2_version": {
         "min": "0.1.5",
