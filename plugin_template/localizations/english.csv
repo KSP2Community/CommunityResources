@@ -1,42 +1,42 @@
-Key,Type,Desc,English
+Key,Type,Desc,English,Chinese (Simplified)
 
-Resource/DisplayName/Oxygen,Text,,Oxygen
-Resource/Abbreviation/O2,Text,,O2
+Resource/DisplayName/Oxygen,Text,,Oxygen,氧气
+Resource/Abbreviation/O2,Text,,O2,O2
 
-Resource/DisplayName/CarbonDioxide,Text,,Carbon Dioxide
-Resource/Abbreviation/CO2,Text,,CO2
+Resource/DisplayName/CarbonDioxide,Text,,Carbon Dioxide,二氧化碳
+Resource/Abbreviation/CO2,Text,,CO2,CO2
 
-Resource/DisplayName/Water,Text,,Water
-Resource/Abbreviation/H2O,Text,,H2O
+Resource/DisplayName/Water,Text,,Water,水
+Resource/Abbreviation/H2O,Text,,H2O,H2O
 
-Resource/DisplayName/WasteWater,Text,,Waste Water
-Resource/Abbreviation/WaH2O,Text,,WaH2O
+Resource/DisplayName/WasteWater,Text,,Waste Water,废水
+Resource/Abbreviation/WaH2O,Text,,WaH2O,WaH2O
 
-Resource/DisplayName/Food,Text,,Food
-Resource/Abbreviation/FD,Text,,FD
+Resource/DisplayName/Food,Text,,Food,食物
+Resource/Abbreviation/FD,Text,,FD,FD
 
-Resource/DisplayName/Waste,Text,,Waste
-Resource/Abbreviation/WST,Text,,WST
+Resource/DisplayName/Waste,Text,,Waste,垃圾
+Resource/Abbreviation/WST,Text,,WST,WST
 
-Resource/DisplayName/Fertilizer,Text,,Fertilizer
-Resource/Abbreviation/Frt,Text,,Frt
+Resource/DisplayName/Fertilizer,Text,,Fertilizer,肥料
+Resource/Abbreviation/Frt,Text,,Frt,Frt
 
-Resource/DisplayName/Hydrolox,Text,,Hydrolox
-Resource/Abbreviation/HO,Text,,HO
+Resource/DisplayName/Hydrolox,Text,,Hydrolox,氢基
+Resource/Abbreviation/HO,Text,,HO,HO
 
-Resource/DisplayName/Argon,Text,,Argon Gas
-Resource/Abbreviation/Ar,Text,,Ar
+Resource/DisplayName/Argon,Text,,Argon Gas,氩气
+Resource/Abbreviation/Ar,Text,,Ar,Ar
 
-Resource/DisplayName/Lithium,Text,,Lithium
-Resource/Abbreviation/Li,Text,,Li
+Resource/DisplayName/Lithium,Text,,Lithium,锂
+Resource/Abbreviation/Li,Text,,Li,Li
 
-VAB/Tooltip/Food,Text,,Food
-VAB/Tooltip/Water,Text,,Water
-VAB/Tooltip/Oxygen,Text,,Oxygen
-VAB/Tooltip/CarbonDioxide,Text,,Carbon Dioxide
-VAB/Tooltip/WasteWater,Text,,Waste Water
-VAB/Tooltip/Waste,Text,,Waste
-VAB/Tooltip/Fertilizer,Text,,Fertilizer
+VAB/Tooltip/Food,Text,,Food,食物
+VAB/Tooltip/Water,Text,,Water,水
+VAB/Tooltip/Oxygen,Text,,Oxygen,氧气
+VAB/Tooltip/CarbonDioxide,Text,,Carbon Dioxide,二氧化碳
+VAB/Tooltip/WasteWater,Text,,Waste Water,废水
+VAB/Tooltip/Waste,Text,,Waste,垃圾
+VAB/Tooltip/Fertilizer,Text,,Fertilizer,肥料
 
-VAB/Tooltip/Argon,Text,,Argon
-VAB/Tooltip/Lithium,Text,,Lithium
+VAB/Tooltip/Argon,Text,,Argon,氩
+VAB/Tooltip/Lithium,Text,,Lithium,锂
