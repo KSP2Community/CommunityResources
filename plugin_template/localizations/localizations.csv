@@ -1,0 +1,41 @@
+Key,Type,Desc,English,Chinese (Simplified),French
+
+Resource/DisplayName/Oxygen,Text,,Oxygen,氧气,Oxygène
+Resource/Abbreviation/O2,Text,,O2,O2,O2
+
+Resource/DisplayName/CarbonDioxide,Text,,Carbon Dioxide,二氧化碳,Dioxyde de Carbone
+Resource/Abbreviation/CO2,Text,,CO2,CO2,CO2
+
+Resource/DisplayName/Water,Text,,Water,水,Eau
+Resource/Abbreviation/H2O,Text,,H2O,H2O,H2O
+
+Resource/DisplayName/WasteWater,Text,,Waste Water,废水,Eau Usée
+Resource/Abbreviation/WaH2O,Text,,WaH2O,WaH2O,WaH2O
+
+Resource/DisplayName/Food,Text,,Food,食物,Nourriture
+Resource/Abbreviation/FD,Text,,FD,FD,NT
+
+Resource/DisplayName/Waste,Text,,Waste,垃圾,Déchets
+Resource/Abbreviation/WST,Text,,WST,WST,DE
+
+Resource/DisplayName/Fertilizer,Text,,Fertilizer,肥料,Engrais
+Resource/Abbreviation/Frt,Text,,Frt,Frt,Eng
+
+Resource/DisplayName/Hydrolox,Text,,Hydrolox,氢基,Hydrolox
+Resource/Abbreviation/HO,Text,,HO,HO,HO
+
+Resource/DisplayName/Argon,Text,,Argon Gas,氩气,Argon
+Resource/Abbreviation/Ar,Text,,Ar,Ar,Ar
+
+Resource/DisplayName/Lithium,Text,,Lithium,锂,Lithium
+Resource/Abbreviation/Li,Text,,Li,Li,Li
+
+VAB/Tooltip/Food,Text,,Food,食物,Nourriture
+VAB/Tooltip/Water,Text,,Water,水,Eau
+VAB/Tooltip/Oxygen,Text,,Oxygen,氧气,Oxygène
+VAB/Tooltip/CarbonDioxide,Text,,Carbon Dioxide,二氧化碳,Dioxyde de Carbone
+VAB/Tooltip/WasteWater,Text,,Waste Water,废水,Eau Usée
+VAB/Tooltip/Waste,Text,,Waste,垃圾,Déchets
+VAB/Tooltip/Fertilizer,Text,,Fertilizer,肥料,Engrais
+VAB/Tooltip/Argon,Text,,Argon,氩,Argon
+VAB/Tooltip/Lithium,Text,,Lithium,锂,Lithium

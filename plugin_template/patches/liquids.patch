@@ -38,7 +38,7 @@
 	transferMode: $TM_PUMP;
 	costPerUnit: 0.8;
 	NonStageable: true;
-	resourceIconAssetAddress: "Assets/CR_ICO_Water.png";
+	resourceIconAssetAddress: "CR_ICO_Water.png";
 	vfxFuelType: "NoFuel";
 }
 
